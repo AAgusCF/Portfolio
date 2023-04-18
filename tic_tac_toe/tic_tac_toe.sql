@@ -1,13 +1,5 @@
 USE sql_tic_tac_toe;
 
-#select * from player;
-
-/*ALTER TABLE player
-DROP COLUMN wins,
-DROP COLUMN lose;
-
-DESCRIBE player;*/
-
 CREATE TABLE score(
 	match_id INT PRIMARY KEY AUTO_INCREMENT,
     won_p1 INT DEFAULT 0,
@@ -22,11 +14,7 @@ CREATE TABLE player(
     match_id INT NOT NULL
 );
 
-#ALTER TABLE player ADD COLUMN match_id INT NOT NULL;
 ALTER TABLE player ADD FOREIGN KEY (match_id) REFERENCES score(match_id);
-
-INSERT INTO score () Values ();
-INSERT INTO player (player_name, match_id) Values ("Agustin", 2);
 
 DESCRIBE score;
 DESCRIBE player;
