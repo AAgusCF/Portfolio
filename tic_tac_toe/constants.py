@@ -1,0 +1,5 @@
+USER = 'root'
+PASSWORD = 'iR54_ñ@95-e#x'
+HOST='localhost'
+DB='sql_tic_tac_toe'
+PORT='3306'
